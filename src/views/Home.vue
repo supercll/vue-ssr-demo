@@ -15,5 +15,8 @@ export default {
   components: {
     HelloWorld,
   },
+  asyncData({ store, route }) {
+    return store.dispatch("getCount");
+  },
 };
 </script>
